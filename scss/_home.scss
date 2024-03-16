@@ -418,3 +418,121 @@
     }
 
 }
+
+.s-conta-digital {
+
+    padding: 12.7rem 0 8.5rem 0;
+
+    .container {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .text {
+
+        max-width: 542px;
+
+        h2 {
+
+            color: var(--Grey-600);
+            margin-bottom: 4.5rem;
+
+            span {
+
+                display: block;
+                color: rgba(198, 197, 206, 0.8);
+                margin-bottom: 0.9rem;
+
+            }
+        }
+
+        ul {
+
+            margin-bottom: 6.1rem;
+
+            li {
+
+                gap: 2.6rem;
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+
+                    margin-bottom: 4.5rem;
+
+                }
+
+                .icon {
+
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    background-color: var(--brand-green-light);
+                    border-radius: 0.8rem;
+                    @include flex(row, center, center);
+
+                }
+
+                .info {
+
+                    h4 {
+
+                        margin-bottom: 0.4rem;
+                        color: var(--Grey-400);
+
+                    }
+
+                    p {
+
+                        color: var(--Grey-300);
+                        font-size: 1.8rem;
+                        line-height: 150%;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .image {
+
+        // Criar uma máscara em volta as images para ser trabalhado o position absolute
+
+        width: 100%;
+        max-width: 71.2rem;
+        height: 59.8rem;
+        position: relative;
+        margin-right: -3.8rem;
+        left: 12.5rem;
+
+        img {
+
+            position: absolute;
+
+            &.mockup-01 {
+
+                left: 0;
+                bottom: 4.7rem;
+
+            }
+
+            &.mockup-02 {
+
+                top: 0.3rem;
+                left: 25.8rem;
+
+            }
+
+            &.circle {
+
+                right: 0;
+                bottom: 0;
+
+            }
+
+        }
+
+    }
+}
