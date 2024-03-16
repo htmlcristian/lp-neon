@@ -361,3 +361,60 @@
         }
     }
 }
+
+.s-depoimentos {
+
+    padding-top: 13.4rem;
+
+    .top {
+
+        @include flex(row, flex-end, space-between);
+        margin-bottom: 40px;
+
+        h2 {
+
+            span {
+
+                display: block;
+                color: var(--Grey-200);
+                margin-bottom: 1.4rem;
+
+            }
+
+        }
+
+        .pagination {
+
+            max-width: 100%;
+            width: 6rem;
+            position: relative;
+
+            .swiper-pagination-bullet {
+
+                border-radius: 1.2rem;
+                opacity: 0.3;
+                background: var(--brand-yellow);
+                transition: all .3s;
+
+                &-active {
+
+                    width: 1.723rem;
+                    opacity: 1;
+                    border-radius: 1.2rem;
+                    background: var(--brand-yellow);
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .slide-depoimentos {
+
+        overflow: hidden;
+
+    }
+
+}
